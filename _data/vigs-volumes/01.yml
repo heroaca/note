@@ -1,0 +1,27 @@
+volume: 01
+name: "I'm Here"
+chapters:
+  - chapter: 1
+    name: "I'm Here" 
+    raw: "俺がいる Ore ga iru"
+    description: ""
+
+  - chapter: 2
+    name: "Takeoff" 
+    raw: "離陸テイクオフ Teikuofu"
+    description: ""
+
+  - chapter: 3
+    name: "Nice Guy Reborn" 
+    raw: "親切マン改あらため Shinsetsu Man Aratame"
+    description: ""
+
+  - chapter: 4
+    name: "Honesty" 
+    raw: "素顔 Sugao"
+    description: ""
+
+  - chapter: 5
+    name: "Bee" 
+    raw: "蜂 Hachi"
+    description: ""

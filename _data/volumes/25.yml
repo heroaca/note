@@ -1,0 +1,43 @@
+volume: 25
+name: "Weekly Shōnen Jump Chapters"
+chapters:    
+  - chapter: 236
+    name: "Tenko Shimura: Origin, Part 2" 
+    raw: "志村転弧：オリジン2 Shimura Tenko: Orijin 2"
+    description: ""
+
+  - chapter: 237
+    name: "Tomura Shigaraki: Origin" 
+    raw: "死柄木弔：オリジン Shigaraki Tomura: Orijin"
+    description: ""
+
+  - chapter: 238
+    name: "Liberation" 
+    raw: "解放 Kaihō"
+    description: ""
+
+  - chapter: 239
+    name: "Successor" 
+    raw: "後継 Kōkei"
+    description: ""
+
+  - chapter: 240
+    name: "Power" 
+    raw: "力 Chikara"
+    description: ""
+
+  - chapter: 241
+    name: "Do That Interview!" 
+    raw: "受け応えろ！インタビュー Ukekotaero! Intabyū"
+    description: ""
+
+  - chapter: 242
+    name: "Have a Merry Christmas!" 
+    raw: "メリれ！クリスマス！ Merire! Kurisumasu!"
+    description: ""
+
+  - chapter: 243
+    name: "Off to Endeavor's Agency!" 
+    raw: "いざ！エンデヴァー事務所！ Iza! Endevā Jimusho!"
+    description: ""
+

@@ -1,0 +1,47 @@
+volume: 09
+name: "My Hero"
+chapters:
+  - chapter: 72
+    name: "Day Two" 
+    raw: "二日目 Futsukame"
+    description: ""
+
+  - chapter: 73
+    name: "Good Evening" 
+    raw: "グッドイブニング Guddo Ibuningu"
+    description: ""
+
+  - chapter: 74
+    name: "Smoke Signal" 
+    raw: "狼煙 Noroshi"
+    description: ""
+
+  - chapter: 75
+    name: "Stake Your Life, Hero!" 
+    raw: "賭せ! ヒーロー Tose! Hīrō"
+    description: ""
+
+  - chapter: 76
+    name: "My Hero" 
+    raw: "僕のヒーロー Boku no hīrō"
+    description: ""
+
+  - chapter: 77
+    name: "It's Okay" 
+    raw: "いいよ Ī yo"
+    description: ""
+
+  - chapter: 78
+    name: "Whirling Chaos" 
+    raw: "混乱渦巻き Konran Uzumaki"
+    description: ""
+
+  - chapter: 79
+    name: "Drive It Home, Iron Fist!" 
+    raw: "ブチ込む鉄拳 Buchikomu tekken"
+    description: ""
+
+  - chapter: 80
+    name: "Establishing the Bakugo Bodyguard Brigade" 
+    raw: "発足爆豪護衛部隊 Hossoku Bakugō Goei Butai"
+    description: ""

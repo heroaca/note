@@ -1,0 +1,47 @@
+volume: 12
+name: "The Test"
+chapters:
+  - chapter: 100
+    name: "Creating Ultimate Moves" 
+    raw: "編め必殺技 Ame Hisatsuwaza"
+    description: ""
+
+  - chapter: 101
+    name: "The Girl Called Mei Hatsume" 
+    raw: "発目明という女 Hatsume Mei to iu onna"
+    description: ""
+
+  - chapter: 102
+    name: "On Cloud Nine" 
+    raw: "回想 Kaisō"
+    description: ""
+
+  - chapter: 103
+    name: "The Test" 
+    raw: "𝚃𝙷𝙴 試験 Za Shiken"
+    description: ""
+
+  - chapter: 104
+    name: "White-Hot Battle! To Each Their Own Strengths" 
+    raw: "白熱!各々の実力! Hakunetsu! Onōno no Jitsuryoku!"
+    description: ""
+
+  - chapter: 105
+    name: "Shiketsu High Lurking" 
+    raw: "這い寄る士傑高校 Haiyoru Shiketsu Kōkō"
+    description: ""
+
+  - chapter: 106
+    name: "Class 1-A" 
+    raw: "𝟷年𝙰組 Ichi-nen Ē-gumi"
+    description: ""
+
+  - chapter: 107
+    name: "Denki Kaminari's Thoughts" 
+    raw: "上鳴電気の思うこと Kaminari Denki no Omoukoto"
+    description: ""
+
+  - chapter: 108
+    name: "RUSH!" 
+    raw: "ラッシュ! Rasshu!"
+    description: ""

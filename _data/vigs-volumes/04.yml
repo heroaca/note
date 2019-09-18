@@ -1,0 +1,47 @@
+volume: 04
+name: "Family"
+chapters:
+  - chapter: 19
+    name: "Family" 
+    raw: "家族 Kazoku"
+    description: ""
+
+  - chapter: 20
+    name: "Event Announcement!" 
+    raw: "イベント開催! Ibento Kaisai!"
+    description: ""
+
+  - chapter: 21
+    name: "Ensemble, Assemble!" 
+    raw: "ユニット結成! Yunitto Kessei!"
+    description: ""
+
+  - chapter: 22
+    name: "The Day Of" 
+    raw: "本番当日 Honban Tōjitsu"
+    description: ""
+
+  - chapter: 23
+    name: "Daughter" 
+    raw: "娘 Musume"
+    description: ""
+
+  - chapter: 24
+    name: "A Father-Daughter Talk" 
+    raw: "親子の会話 Oyako no Kaiwa"
+    description: ""
+
+  - chapter: 25
+    name: "Goodbye to Dad" 
+    raw: "パパにさよなら Papa ni Sayonara"
+    description: ""
+
+  - chapter: 26
+    name: "Tamao" 
+    raw: "珠たま緒お Tamao"
+    description: ""
+
+  - chapter: 0
+    name: "Episode Zero" 
+    raw: "Trailer marketing Torērā Māketingu"
+    description: ""

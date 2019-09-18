@@ -1,0 +1,47 @@
+volume: 03
+name: "Senpai"
+chapters:
+  - chapter: 12
+    name: "Senpai" 
+    raw: "先輩 Senpai"
+    description: ""
+
+  - chapter: 13
+    name: "Makoto/Truth" 
+    raw: "真 Makoto"
+    description: ""
+
+  - chapter: 14
+    name: "Major" 
+    raw: "MAJORメジャー Mejā"
+    description: ""
+
+  - chapter: 15
+    name: "Playboy" 
+    raw: "PLAYBOYプレイボーイ Pureibōi"
+    description: ""
+
+  - chapter: 16
+    name: "Mom Descends" 
+    raw: "猛母襲来! Mō Haha Shūrai!"
+    description: ""
+
+  - chapter: 17
+    name: "Tag Team!" 
+    raw: "タッグ結成! Taggu Kessei!"
+    description: ""
+
+  - chapter: 18
+    name: "Force of Will Acceleration!" 
+    raw: "気合いで加速! Kiai de Kasoku!"
+    description: ""
+
+  - chapter: 6.5
+    name: "Hero Conference" 
+    raw: "ヒーロー会合 Hīrō Kaigō"
+    description: ""
+
+  - chapter: 6.6
+    name: "Hero Visit" 
+    raw: "ヒーロー訪問 Hīrō Hōmon"
+    description: ""
