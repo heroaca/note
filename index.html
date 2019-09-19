@@ -52,6 +52,11 @@ title: Deku's hero analysis note
 
     <title>Deku's hero analysis note</title>
     <link rel="stylesheet" type="text/css" href="/assets/css/default.css" />
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
+    
     <script src="/assets/js/modernizr.custom.js"></script>
 
     <!-- CSS -->
@@ -107,15 +112,15 @@ title: Deku's hero analysis note
       }
 
       .main-carousel { 
-        height: 90%; 
+        height: 99%;
       }
 
       .raw-carousel { 
-        height: 90.5%;
+        height: 99.5%;
       }
 
-      .carousel-cell { height: 100% }
-      .carousel-cell img { height: 100% }
+      .carousel-cell { width: 100% }
+      .carousel-cell img { width: 100% }
 
       /* move page dots into carousel */
       .flickity-page-dots { bottom: 10px; }
@@ -148,6 +153,19 @@ title: Deku's hero analysis note
         transition: opacity 0.4s;
       }
 
+      .char-menu {
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        /*background-color: #f8f8f8;*/
+        /*height: 40px;*/
+        /*width: 50px;*/
+        /*padding: 10px 15px;*/
+        z-index: 1000;
+        /*opacity: 0.5;*/
+        /*transition: opacity 0.4s;*/
+      }
+
       .raw-button:hover {
         opacity: 1.0;
       }
@@ -175,9 +193,15 @@ title: Deku's hero analysis note
         color: white;
       }
 
-      .menu {
+      /*.menu {
         position: fixed;
         bottom: 0px;
+      }*/
+
+      .char-button {
+        border: 1px black solid;
+        text-align: center;
+        padding-bottom: 4px;
       }
 
     </style>
@@ -205,15 +229,6 @@ title: Deku's hero analysis note
           {% endif %}
         {% endif %}
       {% endfor %}
-
-          <div class="carousel-cell">
-            {% if nexturl %}
-            <a href="{{nexturl}}" class="nav-button next-button">次の話</a><br><br>
-            {% endif %}
-            {% if prevurl %}
-            <a href="{{prevurl}}" class="nav-button previous-button">前の話</a>
-            {% endif %}
-          </div>
       </div>
       <div class="raw-carousel">
 
@@ -234,26 +249,28 @@ title: Deku's hero analysis note
           {% endif %}
         {% endif %}
       {% endfor %}
-
-          <div class="carousel-cell">
-            {% if nexturl %}
-            <a href="{{nexturl}}" class="nav-button next-button">次の話</a><br><br>
-            {% endif %}
-            {% if prevurl %}
-            <a href="{{prevurl}}" class="nav-button previous-button">前の話</a>
-            {% endif %}
-          </div>
       </div>
 
-      <div class="menu">
+      <a href="#offcanvas-slide" class="uk-icon-button char-menu" uk-icon="users" uk-toggle></a>
+
+      <div id="offcanvas-slide" class="menu" uk-offcanvas="overlay: true; flip: true">
+        <div class="uk-offcanvas-bar uk-text-center">
+          <img class="uk-margin" src="assets/images/c_title_chara.png">
         {% for file in site.static_files %}
           {% if file.path contains 'assets/button/' %}
             {% if file.path contains 'off' %}
-            <img src="{{ file.path }}">
+            {% assign on_button = file.path | replace: "_off","" %}
+            {% assign indexNumber = on_button | replace: "/assets/button/", "" | replace: "c_chara_thumb", "" | replace: ".jpg","" %}
+            <a onclick="changePage('{{ indexNumber }}')" onmouseover="hvr(this, 'in')" onmouseleave="hvr(this, 'out')">
+              <img class="char-button" src="{{ file.path }}" col="g">
+
+              
+              <img class="char-button" src="{{ on_button }}" col="b" style="display: none">
+            </a>
             {% endif %}
           {% endif %}
         {% endfor %}
-
+        </div>
       </div>
 		
     </div><!-- /container -->
@@ -262,6 +279,21 @@ title: Deku's hero analysis note
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/flickity-sync@2/flickity-sync.js"></script>
     <script>
+      function hvr(dom, action)
+      {
+        if (action == 'in')
+        {
+          $(dom).find("[col=g]").css("display", "none");
+          $(dom).find("[col=b]").css("display", "inline-block");
+        }
+
+        else
+        {
+          $(dom).find("[col=b]").css("display", "none");
+          $(dom).find("[col=g]").css("display", "inline-block");
+        }
+      }
+
       function getUrlVars() {
         var vars = {};
         var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
@@ -443,6 +475,10 @@ title: Deku's hero analysis note
           return { init : init };
 
       })();
+
+      function changePage(index) {
+        $('.main-carousel').flickity('select', index );
+      }
     </script>
     <script>
         Page.init();
